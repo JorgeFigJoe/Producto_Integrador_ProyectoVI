@@ -6,13 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>Reporte de incidencias</title>
+        <title>Cuotas</title>
 
         <!--CDN´s-->
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
         <!-- Estilos CSS -->
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/estilos_calculadora.css" />
 
         <!-- Iconografías Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -21,7 +22,6 @@
 
     <body>
         <div class="wrapper">
-
             <!-- Sidebar  -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -90,14 +90,14 @@
                             </li>
                         </ul> -->
                     </li>
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="incidencias.html" target="_self">
                             <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
                             <p>Reporte de incidencias</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="cuotas.html" target="_self">
+                    <li class="active">
+                        <a href="#">
                             <img src="img/menu/logo_Asistencia.svg" alt="asistencia" />
                             <p>Cuotas</p>
                         </a>
@@ -136,7 +136,7 @@
                 </ul>
             </nav>
 
-            
+
             <!-- Page Content  -->
             <div id="content">
                 <div class="container-fluid">
@@ -149,7 +149,7 @@
                         </div>
                         <div class="col-7 col-md-8"></div>
                         <div class="col-2 col-md-2">
-                            <img src="img/companyname_loging.png" alt="Logo naxus" class="naxus_logo_movil" />
+                            <img src="img/company_name_bco.svg" alt="Logo naxus" class="naxus_logo_movil" />
                         </div>
                     </div>
 
@@ -174,67 +174,79 @@
 
                 <!-- inicia cuerpo del documento -->
 
-                <div class="container-fluid contacto">
-                    <!--Contácto-->
-
-                    <div class="row">
-                        <!--Contácto-->
-                        <div class="col-12 col-md-12 col-lg-12">
-                            <div class="spaCbzSeg">
-                                <h3 class="encabz">Reportar una incidencia</h3>
+                <div class="container-fluid">
+                   
+                        <div class="col-lg-6">
+                            <div>
+                                
+                                <h3 class="encabz">Cuotas</h3>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <!--contacto-->
-                    <div class="row DetalleProductContact">
-                       
-                            <div class="col-12 col-md-2 col-lg-1">
-                            </div>
-                            <div class="col-12 col-md-8 col-lg-10">
+                    
+                    
+                        <div class="col-lg-4">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="infoUsuaPrest">
                                 <h3>
-                                   Tienes alguna queja o deseas notificar alguna incidencia
+                                    <b>Estado de cuenta</b> <br />
                                 </h3>
-                                <p>
-                                   Hazlo a traves de nuestro formulario
-                                </p>
-                                
-                                <form role="form">
-                                    <div class="form-group">
-                                        
-                                        <label for="exampleInputEmail1">
-                                            Asunto
-                                        </label>
-                                        <input type="name" class="form-control" id="asunto" />
-                                    </div>
-                                
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Mensaje</label>
-                                        <textarea class="form-control" id="mensaje" rows="10"></textarea>
-                                    </div>
-                                    
-                                   <div class="row">
-                                    <div class="col-12 col-md-6 col-lg-6"></div>
-                                    <div class="col-12 col-md-6 col-lg-6">
-                                        <a href="#"  class="btn btn-block btn-lg btn-primary">Publicar</a>
-                                    </div>
-                                </div>
-                                    
-                                </form>
-                            </div>
-                            <div class="col-12 col-md-2 col-lg-1">
-                            </div>
-                        
+                                <hr />
+                                <p>Actualmente tienes un adeudo de</p>
+                                <p class="variable"><span>$0.00</span> MXN</p>
 
-                    </div>
-                   
+                                <br />
+                                <p>Fecha limite de pago</p>
+                                <p class="variable"><span>05-06-22</span></p>
+
+                            
+                                <br />
+                                <a href="#" class="btn btn-block btn-primary enlace02">Realizar pago</a>
+                                <br />
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <!--modulo informacion personal-->
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="Noborder"><p class="titleSeg">Periodo</p></th>
+                                            <th class="Noborder"><p class="titleSeg">forma de pago</p></th>
+                                            <th class="Noborder"><p class="titleSeg">Fecha de pago</p></th>
+                                            <th class="Noborder"><p class="titleSeg">Monto</p></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Del 01-04-22 al 30-04-22</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Mantenimiento</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">05-05-22</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">$500.00 mxn</p></td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Del 01-03-22 al 31-03-22</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Mantenimiento</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">05-04-22</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">$500.00 mxn</p></td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td data-column="Nombre" class="RightBorder"><p class="itemSeg">Del 01-02-22 al 28-02-22</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">Mantenimiento</p></td>
+                                            <td data-column="Seguro" class="RightBorder"><p class="itemSeg">05-03-22</p></td>
+                                            <td data-column="fecha vencimiento" class="RightBorder"><p class="itemSegFecha">$500.00 mxn</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    
                 </div>
             </div>
         </div>
-
-
 
         <div class="container-fluid fot">
             <div class="row">
@@ -272,5 +284,6 @@
                 });
             });
         </script>
+        <script src="js/script_calc.js"></script>
     </body>
 </html>
