@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-        <title>Reporte de incidencias</title>
+        <title>naxu | tienda virtual</title>
 
         <!--CDN´s-->
         <!-- Bootstrap CSS CDN -->
@@ -21,36 +21,33 @@
 
     <body>
         <div class="wrapper">
-
             <!-- Sidebar  -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <img src="img/logo_naxu.png" alt="logo naxu" />
-                    <!--<img src="img/logo_naxu_movil.svg" alt="logo naxu movil" class="logo_movil">-->
+                    <img src="img/logo_naxu.svg" alt="logo naxu" />
                 </div>
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="indexx.html" target="_self">
-                            <img src="img/menu/logo_home_hover.svg" alt="home" />
+                        <a href="index.html" target="_self">
+                            <img src="img/menu/logo_home.svg" alt="home" />
                             <p>Inicio</p>
                         </a>
                     </li>
-
                     <li>
-                        <a href="av_adminisracion.html" target="_self">
-                            <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
-                            <p>Avisos administración</p>
+                        <a href="nomina.html">
+                            <img src="img/menu/logo_recibonomina_hover.svg" alt="recibos de nomina" />
+                            <p>Recibos de Nómina</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="av_residentes.html" target="_self">
-                            <img src="img/menu/logo_creditos.svg" alt="residentes" />
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_creditos.svg" alt="creditos" />
                             <i class="fa fa-chevron-down"></i>
-                            <p>Avisos residentes</p>
+                            <p>Créditos</p>
                         </a>
-                       <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
                                 <a href="prestamos.html" target="_self">
                                     <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Prestamos</p>
@@ -61,26 +58,24 @@
                                     <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Anticipos</p>
                                 </a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
-
                     <li>
-                        <a href="minutas.html" target="_self">
+                        <a href="vacaciones.html" target="_Self">
                             <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
-                            <p>Minutas</p>
+                            <p>Vacaciones</p>
                         </a>
                     </li>
-
-                    <li >
-                        <a href="agenda.html" target="_self">
+                    <li>
+                        <a href="#segurosSubmenu" data-toggle="collapse" aria-expanded="false">
                             <img src="img/menu/logo_seguros.svg" alt="seguros" />
                             <i class="fa fa-chevron-down"></i>
-                            <p>Agenda</p>
+                            <p>Seguros</p>
                         </a>
-                       <!-- <ul class="collapse list-unstyled" id="segurosSubmenu">
+                        <ul class="collapse list-unstyled" id="segurosSubmenu">
                             <li>
                                 <a href="seguros.html" target="_self">
-                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis seguros</p>
+                                    <p class="subItem "><i class="fa fa-chevron-right" id="oc"></i>Mis seguros</p>
                                 </a>
                             </li>
                             <li>
@@ -88,27 +83,27 @@
                                     <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Adquirir seguros</p>
                                 </a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="beneficios.html" target="_self">
                             <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
-                            <p>Reporte de incidencias</p>
+                            <p>Beneficios</p>
                         </a>
                     </li>
                     <li>
-                        <a href="cuotas.html" target="_self">
-                            <img src="img/menu/logo_Asistencia.svg" alt="asistencia" />
-                            <p>Cuotas</p>
+                        <a href="asistencia.html" target="_self">
+                            <img src="img/menu/logo_asistencia.svg" alt="asistencia" />
+                            <p>Asistencia</p>
                         </a>
                     </li>
                     <li>
-                        <a href="msgAdministrador.html"  aria-expanded="false">
-                            <img src="img/menu/logo_Contacto.svg" alt="Tienda virtual" />
+                        <a href="#tiendaSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_tienda.svg" alt="Tienda virtual" />
                             <i class="fa fa-chevron-down"></i>
-                            <p>Mensajes administrador</p>
+                            <p>Tienda Virtual</p>
                         </a>
-                        <!--<ul class="collapse list-unstyled" id="tiendaSubmenu">
+                        <ul class="collapse list-unstyled" id="tiendaSubmenu">
                             <li>
                                 <a href="productos.html" target="_self">
                                     <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Productos</p>
@@ -119,24 +114,23 @@
                                     <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis pedidos</p>
                                 </a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="contacto.html" target="_self">
-                            <img src="img/menu/logo_Contacto.svg" alt="contacto" />
+                            <img src="img/menu/logo_contacto_hover.svg" alt="contactoa" />
                             <p>Contácto</p>
                         </a>
                     </li>
                     <li>
-                        <a href="loging.html" target="self">
-                            <img src="img/menu/logo_salir.svg" alt="salir" />
+                        <a href="loging.html" target="_self">
+                            <img src="img/menu/logo_salir.svg" alt="salira" />
                             <p>Salir</p>
                         </a>
                     </li>
                 </ul>
             </nav>
 
-            
             <!-- Page Content  -->
             <div id="content">
                 <div class="container-fluid">
@@ -149,7 +143,7 @@
                         </div>
                         <div class="col-7 col-md-8"></div>
                         <div class="col-2 col-md-2">
-                            <img src="img/companyname_loging.png" alt="Logo naxus" class="naxus_logo_movil" />
+                            <img src="img/company_name_bco.svg" alt="Logo naxus" class="naxus_logo_movil" />
                         </div>
                     </div>
 
@@ -160,7 +154,7 @@
                             <p class="Usua">Luis Enrique Beltrán Rivera</p>
                         </div>
                         <div class="col-1 col-md-2">
-                            <img src="img/companyname_loging.png" alt="Logo de company" />
+                            <img src="img/company_name.svg" alt="Logo de company" />
                         </div>
                     </div>
 
@@ -178,10 +172,40 @@
                     <!--Contácto-->
 
                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="carousel slide" id="carousel-541591">
+                                <ol class="carousel-indicators">
+                                    <li data-slide-to="0" data-target="#carousel-541591" class="active">
+                                    </li>
+                                    <li data-slide-to="1" data-target="#carousel-541591">
+                                    </li>
+                                    <li data-slide-to="2" data-target="#carousel-541591">
+                                    </li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto.png" />
+                                        
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto01.png" />
+                                        
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" alt="slider Contacto 01" src="img/slider_contacto02.png" />
+                                      
+                                    </div>
+                                </div> <a class="carousel-control-prev" href="#carousel-541591" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-541591" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <!--Contácto-->
                         <div class="col-12 col-md-12 col-lg-12">
                             <div class="spaCbzSeg">
-                                <h3 class="encabz">Reportar una incidencia</h3>
+                                <img src="img/logos_cuerpo/logo_cuerpo_contacto.svg" alt="Contacto" class="imgEncabz" />
+                                <h3 class="encabz">Contácto</h3>
                             </div>
                         </div>
                     </div>
@@ -195,12 +219,14 @@
                             </div>
                             <div class="col-12 col-md-8 col-lg-10">
                                 <h3>
-                                   Tienes alguna queja o deseas notificar alguna incidencia
+                                    Conéctate con nosotros
                                 </h3>
                                 <p>
-                                   Hazlo a traves de nuestro formulario
+                                    En Naxu estamos para ayudarte
                                 </p>
-                                
+                                <p>
+                                    Deja tu mensaje y nosotros nos ponemos en contacto contigo.
+                                </p>
                                 <form role="form">
                                     <div class="form-group">
                                         
@@ -218,7 +244,7 @@
                                    <div class="row">
                                     <div class="col-12 col-md-6 col-lg-6"></div>
                                     <div class="col-12 col-md-6 col-lg-6">
-                                        <a href="#"  class="btn btn-block btn-lg btn-primary">Publicar</a>
+                                        <a href="#"  class="btn btn-block btn-lg btn-primary">Enviar</a>
                                     </div>
                                 </div>
                                     
@@ -228,6 +254,30 @@
                             </div>
                         
 
+                    </div>
+                    <div class="row ContactRS">
+                        <div class="col-3 col-md-8 col-lg-8">
+                        </div>
+                        <div class="col-9 col-md-4 col-lg-4">
+                            <p>
+                                Consulta nuestras redes sociales
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="img/logos_cuerpo/logotwitter.svg" alt="twitter">
+                                </li>
+                                <li >
+                                    <img src="img/logos_cuerpo/logofacebook.svg" alt="facebook">
+                                </li>
+                                <li >
+                                    <img src="img/logos_cuerpo/logoin.svg" alt="logoIn">
+                                </li>
+                                
+                                
+                                
+                                
+                            </ul>
+                        </div>
                     </div>
                    
                 </div>
@@ -241,19 +291,19 @@
                 <div class="col-6 col-md-3 col-lg-2 cjadress">
                     <address>
                         <strong>Contácto</strong><br />
-                        <abbr title="Telefono">Tel:</abbr> 800.234.5674xxx<br />
-                        Mail:info@mail.com.mx <br />
-                        Administra@2022
+                        <abbr title="Telefono">Tel:</abbr> 800.234.5674<br />
+                        Mail:info@naxu.com.mx <br />
+                        NAXU© 2020
                     </address>
                 </div>
                 <div class="col-6 col-md-2 col-lg-2">
-                     <!--<center>
-                        <img src="img/company_name_byn.svg" alt="companylogo" />
-                    </center> -->
+                    <img src="img/company_name_byn.svg" alt="companylogo" />
                 </div>
                 <div class="col-12 col-md-7 col-lg-8">
                     <p>
-                        Para mas información este es nuestros metodos de contacto.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus suscipit optio velit doloremque consectetur nisi eos iure, voluptatum eum nesciunt alias totam officiis esse soluta quod provident natus
+                        maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sint similique officiis ducimus dolorum, non magni iusto voluptates natus doloremque quam cumque expedita quos et ratione! Porro quisquam
+                        assumenda rerum.
                     </p>
                 </div>
             </div>
